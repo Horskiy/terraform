@@ -36,6 +36,31 @@ variable "secret_key" {
   type = string
   sensitive = true
 }
+variable "instance_type" {
+  description = "EC2 instance type"
+  type        = string
+}
+
+variable "key_name" {
+  description = "Key name for SSH access"
+  type        = string
+}
+
+variable "desired_capacity" {
+  description = "Desired number of instances"
+  type        = number
+}
+
+variable "max_size" {
+  description = "Maximum number of instances"
+  type        = number
+}
+
+variable "min_size" {
+  description = "Minimum number of instances"
+  type        = number
+}
+
 
 variable "azs" {
     type = list(any)
