@@ -29,3 +29,10 @@ load_balancing_algorithm = "round_robin"
 listener_type     = "forward"
 listener_port = 8080
 listener_protocol = "HTTP"
+
+#ami
+instance_type   = "t2.micro"
+key_name        = "my-key-pair"
+desired_capacity = 2
+max_size         = 3
+min_size         = 1
